@@ -127,7 +127,7 @@ body{
 }
 /*Header for everything*/
 .experience{
-  display:none;
+  /*display:none;*/
 }
 .header-wrapper{
   width:96%;
@@ -398,6 +398,30 @@ button:hover{
       color:#cb979a;
       font-size:1.1em;
     }
+
+/* Experience*/
+.portfolio h3{
+  color:#ffeede;
+  background-color: #8fb3cb;
+  margin:0;
+  padding:2%;
+  width:96%;
+  font-size: 2em;
+  font-family: "droidserif";
+}
+.site-wrapper{
+  display:flex;
+  width:100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  overflow:hidden;
+}
+figure .site-example{
+  width:30%;
+}
+
+/*Contact*/
 .contact h3{
   color:#ffeede;
   background-color: #8fb3cb;
