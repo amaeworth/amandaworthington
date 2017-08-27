@@ -434,6 +434,9 @@ figure .site-example{
   font-size: 2em;
   font-family: "droidserif";
 }
+#mc_embed_signup{
+  clear:both;
+}
 #mc_embed_signup span{
   font-family:"wisdomscript";
   color:#cb979a;
@@ -473,8 +476,8 @@ form .button{
   width:96%;
 }
 .contact-wrapper {
-  width:80%;
-  padding: 0 10% 0 10%;
+  width:60%;
+  padding: 0 20% 0 20%;
 }
 .contact-wrapper ul {
   display: flex;
@@ -492,6 +495,11 @@ form .button{
   flex-flow:row;
   justify-content: space-around;
   align-items: center;
+}
+.icons8 {
+  font-size: .75em;
+  float:right;
+  padding-right:10%;
 }
 .service-wrapper{
   display:flex;
