@@ -438,11 +438,11 @@ figure .site-example{
 #mc_embed_signup{
   clear:both;
 }
-#mc_embed_signup span{
+/*#mc_embed_signup span{
   font-family:"wisdomscript";
-  /*color:#cb979a;*/
+  color:#cb979a;
   font-size:1.1em;
-}
+}*/
 #mc_embed_signup_scroll{
   display:flex;
   align-items: center;
