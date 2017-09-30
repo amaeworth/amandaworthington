@@ -434,6 +434,20 @@ figure .site-example{
   font-size: 2em;
   font-family: "droidserif";
 }
+.contact h5 {
+  font-size: 1.5em;
+  color: #536b72;
+  width:92%;
+  padding:0 4% 0 4%;
+  text-align: center;
+  font-family:"Droidserif";
+}
+  .contact h5 span{
+      font-family:"wisdomscript";
+      color:#cb979a;
+      font-size:1.1em;
+  }
+
 #mc_embed_signup{
   clear:both;
 }
