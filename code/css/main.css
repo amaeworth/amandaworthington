@@ -94,13 +94,66 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
-
-
-
-
-
-
+/*FONTS start*/
+@font-face {
+  font-family:'charter';
+  src:url(../fonts/CharterITCbyBT-Roman.ttf) format('opentype');
+}
+h1{
+  font-family: "arya-single", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+h2{
+  font-family: "charter", serif;
+  font-style: normal;
+  font-weight: 400;
+}
+h3{
+  font-family: "brother-1816", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+p{
+  font-family: "brother-1816", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+nav ul{
+  font-family: "charter", serif;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+/*FONTS end*/
+/*Header start*/
+/*amw 20171122 logo centering looks ok but could surely be more dynamic/clean*/
+.logo-wrapper{
+  width:100%;
+}
+#logo {
+    display:block;
+    /*max-width: 300px;*/
+    margin: 0 auto;
+    width: 27%;
+}
+/*amw 20171122 need to play around with centering the navigation properly*/
+/*definitely should double check with what i did for the original site... could reuse*/
+nav ul{
+  list-style: none;
+  display:inline;
+  width:75%;
+  float:left;
+  padding-left: 12%;
+  padding-right:12%;
+  text-align: center;
+  margin:0 auto;
+}
+nav a{
+  float:left;
+  padding:5%;
+  text-align: center;
+}
 
 
 

@@ -13,6 +13,8 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <!--Fonts-->
+        <link rel="stylesheet" href="https://use.typekit.net/dpf5xjd.css">
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -20,7 +22,64 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
+        <header>
+          <div class = "logo-wrapper">
+            <a id = "logo" href = ""><img src = "img/logo.png"/></a>
+          </div>
+          <nav>
+            <ul>
+              <li><a id = "active" href="">Home</li></a>
+              <li><a href="portfolio/index.html">Portfolio</a></li>
+              <li><a href="services/index.html">Services</a></li>
+              <li><a href="blog/index.html">Blog</a></li>
+              <li><a href="contact/index.html">Contact</a></li>
+            </ul>
+          </nav>
+          <div class = "tagline-home">
+            <h1>Fall back in <span>love</span> with your website</h1>
+          </div>
+        </header>
+        <main>
+          <div class = "feature">
+            <h2>Where are you in your online journey?</h2>
+            <div class = "one-third">
+                <h3>I DON’T HAVE A WEBSITE AND AM SELLING ON ETSY OR FACEBOOK</h3>
+                <a class ="button-link" href = ""><h2>READ ABOUT THE BENEFITS</h2></a>
+            </div>
+            <div class = "one-third">
+                <h3>I HAVE A WEBSITE AND AM NOT USING IT OR IN LOVE WITH IT</h3>
+                <a class ="button-link" href = ""><h2>check out my services</h2></a>
+            </div>
+            <div class = "one-third">
+                <h3>I LOVE MY WEBSITE AND IT NEEDS SOME TWEAKS</h3>
+                <a class ="button-link" href = ""><h2>Look at my maintenance pack</h2></a>
+            </div>
+          </div>
+          <div class = "about-me">
+            <div id = "portrait">
+              <img src= "img/portrait.jpg" alt = "Amanda Worthington"/>
+            </div>
+            <div class = "bio">
+              <h2>Hi, I'm Amanda!</h2>
+              <p>I started designing and building websites to work my creative muscle.
+                Now, I make websites to help creatives focus more on their passion and less on their website. I make your website easy to maintain and a joy for customers to use.</p>
+            </div>
+          </div>
+        </main>
+        <footer>
+          <div class = "newsletter">
+            <form>
+              <h2>Sign up to receive my website maintenance checklist </h2>
+              First Name:<input type="text" name="firstname"/>
+              Email:<input type="text" name="email"/>
+            </form>
+          </div>
+          <div class = "footer">
+            <img src="img/logo-left.png" alt = "Small Logo Left"/>
+            <img src="img/logo-center.png" alt = "Small Logo"/>
+            <img src="img/logo-right.png" alt = "Small Logo Right"/>
+          </div>
+        </footer>
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
