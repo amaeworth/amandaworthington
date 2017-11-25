@@ -99,7 +99,7 @@ textarea {
   font-family:'charter';
   src:url(../fonts/CharterITCbyBT-Roman.ttf) format('opentype');
 }
-h1{
+h1, h3{
   font-family: "arya-single", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -109,7 +109,7 @@ h2{
   font-style: normal;
   font-weight: 400;
 }
-h3{
+h4{
   font-family: "brother-1816", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -122,44 +122,272 @@ p{
 nav ul{
   font-family: "charter", serif;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   text-transform: uppercase;
+}
+nav ul li a{
+  text-decoration: none;
 }
 /*FONTS end*/
 /*Header start*/
-/*amw 20171122 logo centering looks ok but could surely be more dynamic/clean*/
-.logo-wrapper{
-  width:100%;
+    /*amw 20171122 logo centering looks ok but could surely be more dynamic/clean*/
+    /*amw 20171124 using grid to align logo*/
+    .logo-wrapper {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      /*grid-gap: 5%;*/
+      grid-auto-rows: 100%;
+      grid-template-areas:
+        ". a ."
+        /*". a ."*/
+        ;
+    }
+    #logo{
+      grid-area: a;
+      align-self: center;
+      justify-self: center;
+      padding-top:10%;
+    }
+    /*let's use grid for the whole layout*/
+    .wrapper {
+        display: grid;
+        /*grid-gap: 20px;*/
+        grid-template-columns: repeat(auto-fill);
+        /*1fr;*/
+        grid-template-areas:
+          "header"
+          "nav"
+          "tagline"
+          "content"
+          "footer"
+        ;
+      }
+      nav ul {
+        display: flex;
+        justify-content: space-between;
+        /*padding:2%;*/
+        font-size: 2.25em;
+        text-decoration: none;
+        padding:0 20% 0 20%;
+      }
+      /* nav styles */
+      nav ul li {
+        display: inline-block;
+      }
+      nav a{
+        color:#111c4e;
+      }
+      nav a:hover{
+        color: #f09239;
+      }
+      #active{
+        color: #f09239;
+      }
+  /*then use grid for header and nav so the height is correct*/
+  .view{
+    /*height: 100vh;*/
+    display: grid;
+    /*grid-gap: 20px;*/
+    grid-template-columns: repeat(auto-fill);
+    /*1fr;*/
+    grid-template-areas:
+      "header"
+      "nav"
+      /*"tagline"*/
+      ;
+  }
+  /*make tagline so that the combo of header,nav,and tagline is the total height of the vh*/
+  .tagline{
+    width:70%;
+    background:url('../img/tagline-background.jpg');
+    margin:0;
+    padding: 15%;
+    clear:both;
+    /*padding-bottom: 5%;*/
+    /*grid-column: 1 / 2;*/
+    margin-bottom: 0;
+    border-top: 5px solid #488d77;
+    border-bottom: 5px solid #488d77;
+  }
+    .tagline h1{
+      width:40%;
+      text-align: center;
+      margin: auto;
+      background-color: #ffffff;
+      padding:2%;
+      color: #111c4e;
+      font-size: 2.25em;
+    }
+    .tagline span{
+      color:#ad2c55;
+      font-size: 1.333em;
+    }
+/*Header ends*/
+/*Main starts*/
+.article{
+  clear:both;
 }
-#logo {
-    display:block;
-    /*max-width: 300px;*/
-    margin: 0 auto;
-    width: 27%;
+  .feature h2{
+    text-align: center;
+    font-weight: bold;
+    color:#488d77;
+    font-size: 3.25em;
+  }
+.one-third-wrapper{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template:
+    "a a a";
+  border-bottom: 5px solid #488d77;
+  padding-bottom:2%;
 }
-/*amw 20171122 need to play around with centering the navigation properly*/
-/*definitely should double check with what i did for the original site... could reuse*/
-nav ul{
-  list-style: none;
-  display:inline;
-  width:75%;
-  float:left;
-  padding-left: 12%;
-  padding-right:12%;
+  .one-third{
+    grid-item: a;
+    /*display:flex;
+    justify-content: center;*/
+    background-color: #111c4e;
+    text-align: center;
+    /*width:33%;*/
+    margin:5%;
+  }
+  .one-third-content{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+    .one-third h4{
+      color:#ffffff;
+      font-size: 1.875em;
+      text-transform: uppercase;
+      /*display:flex;
+      justify-content: center;
+      flex-direction: column;*/
+    }
+    .one-third h3{
+      color:#ffffff;
+      font-size: 2.25em;
+      text-transform: capitalize;
+      text-align: center;
+      clear:both;
+      background-color: #488d77;
+      width:94%;
+      padding:3%;
+      display:flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+    .one-third a{
+      text-decoration: none;
+      text-align: center;
+    }
+    .button-link{
+      padding:0 3% 0 3%;
+    }
+    #middle{
+      background-color: #ad2c55;
+    }
+    #middle h3{
+      background-color: #f09239;
+    }
+.about-me-wrapper {
+  padding: 2%;
+  width: 96%;
+  border-bottom: 5px solid #488d77;
+}
+  .about-me{
+    background-color: #111c4e;
+    padding:4%;
+    display:grid;
+    grid-template: "a b";
+    grid-gap: 5%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+    #portrait img{
+      grid-column: a;
+      width:75%;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      border: 8px solid #488d77;
+    }
+  .bio{
+    background-color: #ffffff;
+    grid-column:b;
+  }
+  .bio h2 {
+    color:#488d77;
+    font-weight: bold;
+    font-size: 3.25em;
+    margin:5%;
+  }
+  .bio p{
+    color:#111c4e;
+    font-size: 2.25em;
+    margin:5%;
+  }
+/*main end*/
+/*footer start*/
+form{
+  text-align: left;
+  font-family: "arya-single";
+  font-size: 2.25em;
+  background-color:#ad2c55;
+  color:#ffffff;
+  padding:2%;
+  border-bottom: 5px solid #488d77;
+}
+.form-wrapper{
+  text-align:center;
+  display: grid;
+  grid-template: "a b";
+  grid-template-columns: repeat(2, 1fr);
+}
+.newsletter h2 {
+  color:#488d77;
+  font-weight: bold;
+  font-size: 2.75em;
+  margin:2%;
   text-align: center;
-  margin:0 auto;
 }
-nav a{
-  float:left;
-  padding:5%;
-  text-align: center;
+.first-name{
+  padding-bottom:2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
-
-
-
-
-
-
+.email{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.footer{
+  padding: 2% 0 2% 0;
+  width: 96%;
+  display: grid;
+  grid-template-areas: "a b c";
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+}
+#left{
+  padding-left: 10%;
+  grid-area:a;
+  justify-self: left;
+}
+#center{
+  grid-area:b;
+  justify-self: center;
+}
+#right{
+  /*float:right;*/
+  /*padding-right:1%;*/
+  grid-area:c;
+  justify-self:right;
+}
+/*footer end*/
 
 
 
