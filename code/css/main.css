@@ -500,7 +500,11 @@ form{
     color:#ffffff;
   }
 /*services end*/
-
+/*portfolio start*/
+/*masonry*/
+.grid-item img { width: 200px; }
+.grid-item--width2 img { width: 400px; }
+/*portfolio end*/
 
 
 /* ==========================================================================

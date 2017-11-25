@@ -10,9 +10,13 @@
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="../css/main.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <script src="../js/main.js"></script>
+        <script src="../js/masonry.pkgd.min.js"></script>
+        <!--Fonts-->
+        <link rel="stylesheet" href="https://use.typekit.net/dpf5xjd.css">
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -20,18 +24,59 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <header>
-          <a href = ""><img src = "img/logo.png"/></a>
-          <nav>
-            <ul>
-              <li><a href="">Home</li></a>
-              <li><a href="portfolio/index.html">Portfolio</a></li>
-              <li><a href="services/index.html">Services</a></li>
-              <li><a href="blog/index.html">Blog</a></li>
-              <li>  <a href="contact/index.html">Contact</a></li>
-            </ul>
-          </nav>
-        </header>
+        <div class = "wrapper">
+          <div class = "view">
+            <header>
+              <div class="logo-wrapper">
+                <a id = "logo" href = "../index.html"><img src = "../img/logo.png"/></a>
+              </div>
+            </header>
+            <nav>
+              <ul>
+                <li><a href="../index.html">Home</li></a>
+                <li><a id = "active" href="../portfolio/index.html">Portfolio</a></li>
+                <li><a href="../services/index.html">Services</a></li>
+                <li><a href="../blog/index.html">Blog</a></li>
+                <li><a href="../contact/index.html">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+            <section class = "tagline">
+              <h1>Fall back in <br><span>love</span></br> with your website</h1>
+            </section>
+          </div>
+          <main>
+            <article class = "content">
+              <h1>Portfolio</h1>
+              <div class = "grid">
+                <div class = "grid-item">
+                  <img src = "../img/port-1.jpg"/>
+                </div>
+                <div class = "grid-item">
+                  <img src = "../img/port-1.jpg"/>
+                </div>
+                <div class = "grid-item--width2">
+                  <img src = "../img/port-1.jpg"/>
+                </div>
+              </div>
+            </article>
+          </main>
+          <footer>
+            <div class = "newsletter">
+              <h2>Sign up to receive my website maintenance checklist </h2>
+              <form>
+                <div class = "form-wrapper">
+                  <div class = "first-name">First Name:<input type="text" name="firstname"/></div>
+                  <div class= "email">Email:<input type="text" name="email"/></div>
+                </div>
+              </form>
+            </div>
+            <div class = "footer">
+              <img id = "left" src="../img/logo-left.png" alt = "Small Logo Left"/>
+              <img id = "center" src="../img/logo-center.png" alt = "Small Logo"/>
+              <img id = "right" src="../img/logo-right.png" alt = "Small Logo Right"/>
+            </div>
+          </footer>
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
