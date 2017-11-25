@@ -501,9 +501,49 @@ form{
   }
 /*services end*/
 /*portfolio start*/
-/*masonry*/
-.grid-item img { width: 200px; }
-.grid-item--width2 img { width: 400px; }
+.grid{
+  display:grid;
+  grid-template-areas:
+    "a b"
+    "c c"
+    /*"e d"
+    "f d"*/
+    ;
+  grid-template-columns: repeat(auto-fill);
+  justify-content: center;
+  grid-gap:2%;
+  border-bottom: 5px solid #488d77;
+}
+.grid-item-1 {
+  grid-area:a;
+  display:grid;
+  justify-content: center;
+  /*width:25%;*/
+  padding:2% 0 0 0;
+  margin-left: 5%;
+}
+.grid-item-2 {
+  grid-area:b;
+  display:grid;
+  justify-content: center;
+  /*width:25%;*/
+  padding:2% 0 0 0;
+  margin-right: 5%;
+}
+.grid-item-3 {
+  grid-area:c;
+  display:grid;
+  justify-content: center;
+  /*width:25%;*/
+  padding:2% 0 0 0;
+  margin: 0 2.5% 0 2.5%;
+}
+.grid img{
+  width:100%;
+}
+/*#width2 img{
+  width:200%;
+}*/
 /*portfolio end*/
 
 
