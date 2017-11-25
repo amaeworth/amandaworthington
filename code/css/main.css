@@ -199,7 +199,7 @@ nav ul li a{
   /*make tagline so that the combo of header,nav,and tagline is the total height of the vh*/
   .tagline{
     width:70%;
-    background:url('../img/tagline-background.jpg');
+    background:url('../img/tagline-background.jpg') fixed center;
     margin:0;
     padding: 15%;
     clear:both;
@@ -545,6 +545,50 @@ form{
   width:200%;
 }*/
 /*portfolio end*/
+/*blog start*/
+.blog-grid{
+  display:grid;
+  grid-template-areas:
+    "a b"
+    /*"d e f"*/
+    /*"e d"
+    "f d"*/
+    ;
+  grid-template-columns: repeat(auto-fill);
+  justify-content: center;
+  grid-gap:2%;
+  border-bottom: 5px solid #488d77;
+}
+.blog-grid-item-1{
+  grid-area:a;
+  display:grid;
+  justify-content: center;
+  /*width:25%;*/
+  /*padding:2% 0 0 0;*/
+  margin: 0 2.5% 0 2.5%;
+  background: url("../img/blog-1.jpg") no-repeat center/100%;
+}
+.blog-grid-item-2{
+  grid-area:b;
+  display:grid;
+  justify-content: center;
+  /*width:25%;*/
+  padding:2%;
+  margin: 0 2.5% 0 2.5%;
+  background: url("../img/blog-2.jpg") no-repeat center/100%;
+}
+.blog-grid img{
+  width:100%;
+}
+.blog-title{
+  padding:20%;
+}
+  .blog-title h1{
+    background-color:#ffffff;
+    text-align: center;
+    padding:3%;
+  }
+/*blog end*/
 
 
 /* ==========================================================================
