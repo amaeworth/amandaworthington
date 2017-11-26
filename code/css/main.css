@@ -336,6 +336,9 @@ nav ul li a{
   background-color: #f09239;
   padding:1%;
   margin-top: 2%;
+  display:grid;
+  grid-area: c;
+  width:100%;
 }
 .form-wrapper{
   display: grid;
@@ -363,6 +366,17 @@ form{
   padding:2%;
   /*border-bottom: 5px solid #488d77;*/
 }
+.contact-grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /*grid-gap: 5%;*/
+  grid-auto-rows: 100%;
+  grid-template-areas:
+    "a b"
+    "c c"
+    /*". a ."*/
+    ;
+}
 /*.form-wrapper{
   text-align:center;
   display: grid;
@@ -378,16 +392,20 @@ form{
 }
 .first-name{
   padding-bottom:2%;
-  display: flex;
+  /*display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: column;*/
+  display:grid;
+  grid-area: a;
 }
 .email{
-  display: flex;
+  /*display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: column;*/
+  display:grid;
+  grid-area: b;
 }
 .footer{
   padding: 2% 0 2% 0;
