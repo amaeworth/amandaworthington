@@ -222,8 +222,17 @@ nav ul li a{
       color:#ad2c55;
       font-size: 1.333em;
     }
+    .tagline-hide{
+      display:none;
+    }
+    .tagline-hide h1{
+      display: none;
+    }
 /*Header ends*/
 /*Main starts*/
+main{
+  border-top: 5px solid #488d77;
+}
 .article{
   clear:both;
 }
