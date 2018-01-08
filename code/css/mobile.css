@@ -236,12 +236,20 @@ nav ul li a{
   display: grid;
   grid-template-columns: repeat(1fr);
   grid-template:
-    "a" "a" "a";
+    "a" "b" "c";
   border-bottom: 5px solid #488d77;
   padding-bottom:2%;
 }
+  .one-third-wrapper:nth-child(1){
+    grid-area: a;
+  }
+  .one-third-wrapper:nth-child(2){
+    grid-area: b;
+  }
+  .one-third-wrapper:nth-child(3){
+    grid-area: c;
+  }
   .one-third{
-    grid-item: a;
     background-color: #111c4e;
     text-align: center;
     margin:5%;
@@ -684,11 +692,82 @@ form{
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+@media only screen and (min-width: 768px) {
     /* Style adjustments for viewports that meet the condition */
+    nav ul{
+      font-size: 1.5em;
+    }
+    .tagline h1{
+      font-size: 1.5em;
+    }
+    .content h2{
+      font-size: 2em;
+    }
+    .content h4, h3{
+      font-size: 1.5em;
+    }
+    .about-me{
+      grid-template: "a b";
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .about-me p{
+      font-size: 1.2em;
+    }
 
 }
-
+@media only screen and (min-width: 1024px) {
+    /* Style adjustments for viewports that meet the condition */
+    .one-third-wrapper{
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 2%;
+      padding:2%;
+    }
+    .one-third {
+      width:100%;
+      padding:0;
+      margin:0;
+    }
+    nav ul{
+      font-size: 2.25em;
+    }
+    .tagline h1{
+      font-size: 2.25em;
+    }
+    .content h1{
+      font-size: 3em;
+    }
+    .content h4, h3{
+      font-size: 1.875em;
+    }
+    .about-me{
+      grid-template: "a b";
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .about-me p{
+      font-size: 2em;
+    }
+    .about-me h2{
+      font-size: 3em;
+    }
+    .contact-grid{
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas:
+        "a b"
+        "c c";
+      grid-gap:2%;
+    }
+    form {
+      font-size: 2.25em;
+    }
+    .newsletter h2{
+      font-size: 2.75em;
+    }
+    .grid{
+      grid-template-areas:
+        "a b"
+        "c c";
+    }
+}
 @media print,
        (-webkit-min-device-pixel-ratio: 1.25),
        (min-resolution: 1.25dppx),
