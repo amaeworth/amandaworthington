@@ -734,10 +734,19 @@ form{
       font-size: 2.25em;
     }
     .content h1{
-      font-size: 3em;
+      font-size: 2.5em;
     }
     .content h4, h3{
       font-size: 1.875em;
+    }
+    .content p , ul{
+      font-size: 1.875em;
+    }
+    .buy-det h1{
+      font-size: 3em;
+    }
+    .buy-det span{
+      font-size: 1.25em;
     }
     .about-me{
       grid-template: "a b";
