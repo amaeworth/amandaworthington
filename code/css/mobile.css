@@ -229,6 +229,9 @@ nav ul li a{
   }
 /*Header end*/
 /*Main start*/
+main{
+  border-top: 5px solid #488d77;
+}
 .article{
   clear:both;
 }
