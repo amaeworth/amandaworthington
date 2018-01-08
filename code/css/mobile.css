@@ -786,6 +786,11 @@ form{
         "c c";
     }
 }
+@media only screen and (max-width: 375px) {
+  nav ul{
+    width:80%;
+  }
+}
 @media print,
        (-webkit-min-device-pixel-ratio: 1.25),
        (min-resolution: 1.25dppx),
