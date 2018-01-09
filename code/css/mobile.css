@@ -431,6 +431,12 @@ form{
   padding-left: 2%;
   color:#2c2b42;
 }
+.content h2{
+  color:#488d77;
+}
+.content p{
+  color:#2c2b42;
+}
 .grid{
   display:grid;
   grid-template-areas:
@@ -788,7 +794,7 @@ form{
 }
 @media only screen and (max-width: 375px) {
   nav ul{
-    width:80%;
+    width:75%;
   }
 }
 @media print,
